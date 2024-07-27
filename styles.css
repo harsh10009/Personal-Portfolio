@@ -1,0 +1,827 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/*----------------------------NavBar-------------------------*/
+
+.navbar{
+ 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0px;
+}
+.navbar nav {
+    display: flex;
+ 
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(9, 9, 49);
+    color: white;
+    padding: 0 20px;
+    
+}
+
+.logo h3{
+    color: blue;
+    font-size: 24px;
+    font-style:italic;
+    text-decoration: underline white; 
+}
+
+ 
+.logo h3 span {
+  
+  color: white;
+  text-decoration: underline blue;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+  
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.burger {    
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+.nav-links li :hover {
+    background: blue;
+    transition: 0.5s;
+   
+}
+
+@media screen and (max-width: 793px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 50%;
+        height: 50vh;
+        background-color: #000000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+    
+}
+
+/*---------------------------------------------Home-Section----------------------------------------------*/
+
+#home{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 111), black,  rgb(0, 0, 111));
+    color: white;    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+   
+
+} 
+
+
+/* -----Both-(Intro + Photo)----- */
+
+
+/*---------1.Intro-------*/
+
+.container{
+    display: flex;
+  
+    gap: 3rem;  
+    justify-content: center;
+}
+ 
+
+.intro h1{
+    color: blue;
+    
+}
+
+.intro h2 span{
+    color: yellow;
+ 
+    
+}
+ 
+/*-----Social Media------*/
+
+#link{
+
+    margin-left: 2px;
+    color: white;
+
+}
+#git , #insta {
+
+   margin-left: 20px;
+   color: white;
+
+}
+
+#link:hover, #git:hover, #insta:hover{
+    color: blue;
+}
+
+/*----Buttons----*/
+
+.intro button{
+    height: 2.3rem;
+    width: 7rem;
+    font-size:90%;
+    border: 0px solid white;
+   
+    background-color: orangered;
+    border-radius: 50px;
+    cursor: pointer;
+     
+}
+
+ 
+.intro button a {
+    color: white;
+    text-decoration: none;
+}
+ 
+.intro button:hover{
+    
+    border-width: 3px;
+    box-shadow: 1px 1px 10px 1px white;
+    transition: 0.2s; 
+     
+}
+
+/*-----2.Photo-------*/
+
+.photo #img{
+
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px 1px white;
+    cursor: pointer;
+
+}
+.photo img:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 878px) {
+    #home{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .intro p{
+        font-size: larger;
+    }
+    .container{
+        display:block ;
+        text-align: center;    
+    }
+   
+}
+
+@media screen and (max-width:664px )  {
+    
+    .photo #img {
+        height:280px;      
+    }
+     
+}
+@media screen and (max-width:594px )  {
+
+    .photo #img {
+        height: 200px;     
+    } 
+     
+}
+
+@media screen and (max-width:423.64px )  {
+ 
+    .photo #img {
+        height: 200px;     
+ 
+    } 
+    .container #bt2{
+        margin-top: 10px;    
+    }
+     
+}
+ 
+
+/*-------------------------------------------About-Section-----------------------------------------------*/
+
+#About{
+    background-color: rgb(44, 29, 29);
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box2{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    
+}
+ 
+.box2 h1 span1{
+    color: orangered;
+    text-decoration: underline white;
+}
+
+.box2 h1 span2{
+    color:white;
+    text-decoration: underline orangered;
+}
+.box2 h3 {
+    color: yellow;
+  
+}
+
+.box2 img{
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-left: 3rem; 
+    box-shadow: 1px 1px 30px 1px white;
+    cursor: pointer;
+}
+
+.box2 .text{
+ 
+    font-size: 120%;
+}
+
+@media screen and (max-width: 836px) {
+
+    #About
+    {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .box2{
+         display: block;
+        text-align: center;
+         
+    }
+
+    .box2 img{
+        display: none;
+    }
+ 
+}
+ 
+ 
+
+
+
+/*---------------------------------------------Skills-Section--------------------------------------------*/
+
+#Skills{
+    background-color: rgb(4, 4, 28);
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+    font-size: larger;
+    
+}
+#Skills h1 {
+    text-align: center;
+    font-size: 220%;
+    text-decoration: underline red;
+  
+}
+#Skills h1 span{
+    color: red;
+    text-decoration: underline white;
+
+}
+ 
+/*--------------Row-1---------------*/
+
+#Skills .row1{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#Skills .row1 .r11 , #Skills .row1 .r12{
+    display: flex;
+}
+
+.row1 .sk1 p,  .row1 .sk2 p, .row1 .sk3 p, .row1 .sk4 p{
+    text-align: center;
+}
+
+.row1 .sk2 , .row1 .sk3, .row1 .sk4{
+    margin-left: 120px;
+}
+ 
+.row1 .sk1 img , .row1 .sk2 img , .row1 .sk3 img , .row1 .sk4 img{
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 50%;  
+    cursor: pointer;   
+}
+
+.row1 .sk1 img:hover , .row1 .sk2 img:hover , .row1 .sk3 img:hover , .row1 .sk4 img:hover{
+    box-shadow: 1px 1px 30px 1px white;
+    transform: scale(1.2);
+    transition: 0.3s;
+    
+}
+
+/*-------------Row-2-------------*/
+
+#Skills .row2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#Skills .row2 .r21 , #Skills .row2 .r22{
+    display: flex;
+}
+
+.row2 .sk1 p, .row2 .sk2 p, .row2 .sk3 p, .row2 .sk4 p{
+    text-align: center;
+}
+
+.row2 .sk2 , .row2 .sk3 , .row2 .sk4{
+    margin-left: 120px;
+}
+
+.row2 .sk1 img , .row2 .sk2 img , .row2 .sk3 img , .row2 .sk4 img{
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 50%;  
+    cursor: pointer;   
+}
+
+.row2 .sk1 img:hover , .row2 .sk2 img:hover , .row2 .sk3 img:hover , .row2 .sk4 img:hover{
+    box-shadow: 1px 1px 30px 1px white;
+    transform: scale(1.2);
+    transition: 0.3s;
+    
+}
+
+/*--------Both Row1 and Row2 Media Query Part---------*/
+
+@media screen and (max-width: 984px) {
+    
+    #Skills {
+        font-size: larger;
+        padding-top: 4rem;
+     
+    }
+    #Skills .row1 , #Skills .row2{
+        display: block;
+        justify-content: center;
+    }
+    #Skills .row1 img , #Skills .row2 img{
+        height: 200px;
+  
+    }
+    #Skills .row1 .r11, .r12 , #Skills .row2 .r21, .r22{
+        justify-content: center;
+        
+    }
+    #Skills .row1 .r12  , #Skills .row2 .r22{
+        margin-top: 50px;
+    }
+    #Skills .row1 .r12  .sk3 , #Skills .row2 .r22  .sk3{
+        margin-left: 0;  
+
+    }
+    
+}
+@media screen and (max-width: 564px) {
+ 
+    #Skills .row1 , #Skills .row2{
+        margin-top: 5px;
+    }
+
+    #Skills .row1 img  , #Skills .row2 img{
+        height: 150px;
+
+    }
+    #Skills .row1 .r11  .sk2 , #Skills .row1 .r12 .sk4 {
+        margin-left: 100px;  
+
+    }
+    #Skills .row2 .r21  .sk2 , #Skills .row2 .r22 .sk4 {
+        margin-left: 100px;  
+
+    }
+    
+}
+@media screen and (max-width: 439px) {
+ 
+    #Skills .row1 img , #Skills .row2 img {
+        height: 100px;
+
+    }
+    #Skills .row1 .r11  .sk2 , #Skills .row1 .r12 .sk4 {
+        margin-left: 60px;  
+
+    }
+    #Skills .row2 .r21  .sk2 , #Skills .row2 .r22 .sk4 {
+        margin-left: 60px;  
+
+    }
+ 
+}
+
+/*-----------------------------------------Project-Section-----------------------------------------------*/
+
+
+#project{
+    background-color: rgb(3, 3, 19);
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+ 
+#project h2{
+    font-size: 220%;
+    margin-left: 1rem;
+    text-decoration: underline white;
+    color:rgb(92, 92, 255);
+ 
+}
+
+#project h2 span{
+    color: white;
+    text-decoration: underline blue;
+    
+ 
+}
+
+#project .probox{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+#project img {
+    margin-left: 10px;
+    border: 1px solid white;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.pro1, .pro2, .pro3{
+    height: 370px;
+    width: 220px;
+    border: 1px solid white;
+    background-color: rgb(0, 18, 65);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px white;
+    
+     
+}
+
+
+
+.pro1 h4 , .pro2 h4, .pro3 h4{
+    text-align: center;
+    text-decoration: underline;
+    color: yellow;
+     
+}
+.pro1 p, .pro2 p, .pro3 p{
+    margin-top: 10px;
+    font-size:70%;
+
+}
+ 
+.pro1 button {
+    
+    color: white;
+    background-color:   rgb(2, 2, 37);
+    border: 1px solid  rgb(2, 2, 37);
+    margin-top: 7px;
+    height: 1.5rem;
+    width: 11rem;
+    margin-left: 5px;
+   
+}
+
+.pro2 button{
+    height: 1.5rem;
+    width: 11rem;
+    text-align: center;
+    font-size: 67%;
+    margin-top: 6px;
+    margin-left: 5px;
+    background-color:   rgb(2, 2, 37);
+    border: 1px solid  rgb(2, 2, 37);
+    color: white;
+    
+}
+
+.pro3 button {
+    
+    color: white;
+    background-color:   rgb(2, 2, 37);
+    border: 1px solid  rgb(2, 2, 37);
+    margin-top: 20px;
+    height: 1.5rem;
+    width: 11rem;
+    margin-left: 5px;
+   
+}
+ 
+.pro1 a button, .pro2 a button, .pro3 a button{
+    height: 22px;
+    width: 80px;
+    font-size:15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    
+}
+
+ 
+.pro1:hover, .pro2:hover, .pro3:hover{
+ 
+    transform: scale(1.10);
+    transition: 0.5s;
+     
+}
+.pro1 a button:hover , .pro2 a button:hover, .pro3 a button:hover {
+
+    border: 2px solid white;
+   
+}
+
+@media screen and (max-width: 964px) {
+
+    #project {   
+        padding-top: 4rem;      
+        
+    }
+    #project  h2 {   
+
+        margin-left: 1px;
+        font-size: 230%;
+            
+        
+    }
+    #project .probox{            /*For center the probox*/
+        display: block;
+        padding-top: 1rem;
+        max-width: fit-content; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+
+
+/*-----------------------------------------------------Contact-Section----------------------------------------------------------------*/
+
+
+#contact{
+    background-color: black;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contact .container{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+      
+}
+ 
+/*------------------Contact-Left------------------*/
+
+ 
+
+#contact .container .contact-left h1{
+    font-size: 250%;
+    color: blue;
+    text-decoration: underline white;
+  
+}
+
+#contact .container .contact-left h1 span{
+    
+    color:white;
+    text-decoration: underline blue;
+  
+}
+ 
+ 
+#contact .container .contact-left #mail, .container .contact-left #dial{
+
+    display: flex;
+    
+}
+#contact .container .contact-left #mail p, .container .contact-left #dial p {
+
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+#contact .container .contact-left #mail p a{
+
+    text-decoration:none;
+    color: white;
+}
+
+#contact .container .contact-left button {
+    height: 2rem;
+    width: 7rem;
+    background-color: red;
+    font-size: 90%;
+    border-radius: 10px;
+    border: 1px solid red;
+    cursor: pointer;
+ 
+     
+}
+#contact .container .contact-left button:hover{
+    border-color: white;
+}
+
+.container .contact-left button a{
+    color: white;
+    text-decoration: none;
+}
+
+/*------------------Contact-Right------------------*/
+ 
+#contact .contact-right .your-name , #contact .contact-right .your-email {
+    padding-left: 20px;
+    background-color: rgb(57, 39, 39);
+    color: white; 
+    height: 3rem;
+    width:30rem;
+    border: 1px solid  rgb(57, 39, 39);
+    border-radius: 50px;
+}
+ 
+
+#contact .contact-right textarea{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(57, 39, 39);
+    height: 7rem;
+    padding-top: 10px;
+    font-size: large;
+    border: 1px solid  rgb(57, 39, 39);
+    border-radius: 50px;
+    width: 30rem;
+    border-radius: 10px;
+    color: white;
+    border-color:  rgb(57, 39, 39);
+}
+
+#contact .contact-right .submitbutton{
+
+    height:2rem;
+    width: 7rem;
+    font-size: 110%;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contact .container .contact-right button:hover{
+    border-color: white;
+}
+
+@media screen and (max-width: 964px) {
+
+    #contact{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #contact .container{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-top: 0rem;
+ 
+    }
+
+    #contact .container .contact-left #mail,   #contact .container .contact-left #dial{
+        
+        justify-content: center;
+ 
+    }
+  
+}
+
+@media screen and (max-width: 499px) {
+ 
+    #contact .contact-right .your-name , #contact .contact-right .your-email ,#contact .contact-right textarea{
+    width: 20rem;
+   
+    }
+ 
+}
+
+@media screen and (max-width: 333px) {
+
+    #contact .contact-right .your-name , #contact .contact-right .your-email ,#contact .contact-right textarea{
+    width: 15rem;
+   
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+     
+ 
+ 
