@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -131,7 +131,7 @@
  
 
 .intro h1{
-    color: skyblue;
+    color: blue;
     
 }
 
@@ -249,7 +249,7 @@
 /*-------------------------------------------About-Section-----------------------------------------------*/
 
 #About{
-    background-color: rgb(44, 29, 29);
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 111), black,  rgb(0, 0, 111));
     padding-top: 7rem;
     padding-bottom: 5rem;
     color: white;
@@ -318,8 +318,9 @@
 /*---------------------------------------------Skills-Section--------------------------------------------*/
 
 #Skills{
-    background-color: rgb(4, 4, 28);
-    color: white;
+    background-image: linear-gradient(to bottom right, rgb(113, 81, 81) , rgb(20, 7, 30),  rgb(20, 7, 30) );
+
+     color: white;
     padding-top: 4rem;
     padding-bottom: 2.5rem;
     font-size: larger;
@@ -474,8 +475,9 @@
 
 
 #project{
-    background-color: rgb(3, 3, 19);
-    padding-top: 4rem;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 111), black,  rgb(0, 0, 111));
+
+     padding-top: 4rem;
     padding-bottom: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -636,7 +638,7 @@
 
 
 #contact{
-    background-color: black;
+    background: rgb(2,0,36);
     color: white;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -790,38 +792,3 @@
     }
   
 }
-
-
-
-
-
-
-
-
-
-
- 
-
- 
-
- 
- 
-
- 
- 
-
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
-
- 
-     
- 
- 
