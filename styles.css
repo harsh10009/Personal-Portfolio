@@ -6,15 +6,13 @@
  
 /*----------------------------NavBar-------------------------*/
 
-.navbar{
- 
+.navbar {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: sticky;
     top: 0px;
 }
 .navbar nav {
     display: flex;
- 
     justify-content: space-between;
     align-items: center;
     height: 50px;
@@ -162,16 +160,14 @@
 
 /*----Buttons----*/
 
-.intro button{
+.intro button {
     height: 2.3rem;
     width: 7rem;
     font-size:90%;
     border: 0px solid white;
-   
     background-color: orangered;
     border-radius: 50px;
-    cursor: pointer;
-     
+    cursor: pointer; 
 }
 
  
@@ -319,8 +315,7 @@
 
 #Skills{
     background-image: linear-gradient(to bottom right, rgb(113, 81, 81) , rgb(20, 7, 30),  rgb(20, 7, 30) );
-
-     color: white;
+    color: white;
     padding-top: 4rem;
     padding-bottom: 2.5rem;
     font-size: larger;
@@ -476,8 +471,7 @@
 
 #project{
     background-image: linear-gradient(to bottom right, rgb(0, 0, 111), black,  rgb(0, 0, 111));
-
-     padding-top: 4rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
